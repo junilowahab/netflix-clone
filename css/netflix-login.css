@@ -6,9 +6,11 @@
 }
 
 .landing-page{
+    display: flex;
+    flex-direction: column;
     height: 120vh;
     width: 100vw;
-    background-image: url(../images/thibault-penin-AWOl7qqsffM-unsplash.jpg);
+    background-image: url(../images/netflixteaser.png);
     background-size: cover;
 }
 
@@ -19,6 +21,7 @@ nav{
     align-items: center;
     width: 100vw;
     height: 100px;
+    background-image: linear-gradient(black, transparent);
 }
 
 .netflix-icon{
@@ -29,7 +32,7 @@ nav{
     background-size: cover;
 }
 
-.signup{
+.signin{
     margin-right: 150px;
     height: 35px;
     width: 80px;
@@ -45,4 +48,41 @@ nav{
     height: 80vh;
     background-color: black;
     border-top: 8px solid rgba(128, 128, 128, 0.3);
+}
+
+.motto{
+    color: white;
+    align-self: center;
+    margin-top: 150px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.motto h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.motto h2{
+    font-size: 25px;
+}
+
+.motto h3{
+    font-size: 20px;
+}
+
+#email{
+    height: 50px;
+    width: 350px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.493);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
 }
