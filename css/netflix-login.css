@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.landing-page{
+    height: 120vh;
+    width: 100vw;
+    background-image: url(../images/thibault-penin-AWOl7qqsffM-unsplash.jpg);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+
+.netflix-icon{
+    margin-left: 150px;
+    height: 120px;
+    width: 160px;
+    background-image: url(../images/Netflix-Logo.wine.svg);
+    background-size: cover;
+}
+
+.signup{
+    margin-right: 150px;
+    height: 35px;
+    width: 80px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.features{
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    border-top: 8px solid rgba(128, 128, 128, 0.3);
+}
