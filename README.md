@@ -1,2 +1,3 @@
 # netflix-clone
-first cloned website project
+First cloned website project
+Netflix login background page by https://unsplash.com/@thibaultpenin
