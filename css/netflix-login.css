@@ -48,6 +48,11 @@ nav{
     height: 80vh;
     background-color: black;
     border-top: 8px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .motto{
@@ -86,4 +91,34 @@ nav{
     height: 50px;
     width: 200px;
     font-size: 20px;
+}
+
+.quote-image{
+    height: 300px;
+    width: 350px;
+    border: red solid 2px;
+}
+
+.quote-image.one{
+    background-image: url(../images/thibault-penin-AWOl7qqsffM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-image.two{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-image.three{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-image.four{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
 }
