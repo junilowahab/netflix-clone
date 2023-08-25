@@ -90,35 +90,50 @@ nav{
 #submit{
     height: 50px;
     width: 200px;
-    font-size: 20px;
+    font-size: 23px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bolder;
 }
 
 .quote-image{
     height: 300px;
     width: 350px;
     border: red solid 2px;
+    overflow: hidden;
 }
 
 .quote-image.one{
-    background-image: url(../images/thibault-penin-AWOl7qqsffM-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    overflow: hidden;
+}
+
+video{
+    height: 150px;
 }
 
 .quote-image.two{
-    background-image: url();
-    background-size: cover;
-    background-position: center;
+    
 }
 
 .quote-image.three{
-    background-image: url();
-    background-size: cover;
-    background-position: center;
+
 }
 
 .quote-image.four{
-    background-image: url();
-    background-size: cover;
-    background-position: center;
+
 }
