@@ -199,3 +199,36 @@ video{
     font-weight: lighter;
     margin-top: 20px;
 }
+
+.FAQ{
+    width: 100vw;
+    height: 180vh;
+    background-color: black;
+    border-top: 8px solid rgb(54, 54, 54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.FAQ h1{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.questions{
+    height: 80px;
+    width: 80vw;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+span{
+    font-size: 50px;
+}
