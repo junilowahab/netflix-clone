@@ -10,15 +10,23 @@ function answersDropDown(){
         question.addEventListener('click', () => {
             question.appendChild(answers);
             answers.classList.add('answers');
-
-            //Triggers change of drop sign
-            turnDropSign();
+            dropSigns.forEach(dropSign => {
+                
+                //Triggers change of drop sign
+                turnDropSign();
             
+                //Adds a class to indicate that the answer have dropped
+                function turnDropSign(){
+                    if(question.contains(dropSign)){
+                        dropSign.classList.toggle('changed')
+                    }   
+                };
+            })
+
             //Display the answers in the answer div from the faqAnswers object
             for(const key in faqAnswers){
                 let questionID = question.getAttribute('id');
                 if(key === questionID){
-                    console.log(`${faqAnswers[key]}`);
                     answers.innerText = faqAnswers[key];
                 }
             }
@@ -26,12 +34,7 @@ function answersDropDown(){
     })
 }
 
-//Changes positioning to indicate that the answer have dropped
-function turnDropSign(){
-    dropSigns.forEach(dropSign => {
-        dropSign.classList.toggle('changed');
-    });
-};
+
 
 answersDropDown();
 
