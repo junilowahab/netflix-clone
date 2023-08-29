@@ -242,8 +242,12 @@ video{
     background-color: rgb(54, 54, 54, 1);
 }
 
-span{
+.drop-sign{
     font-size: 50px;
+}
+
+.drop-sign.changed{
+    transform: rotate(45deg);
 }
 
 .answers{
@@ -252,5 +256,6 @@ span{
     width: 80vw;
     background-color: rgb(54, 54, 54);
     transition: 1s;
-    padding: 1px;
+    padding: 15px;
+    font-size: 20px;
 }

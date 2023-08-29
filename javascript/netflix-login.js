@@ -1,4 +1,5 @@
 let questions = document.querySelectorAll('.questions');
+let dropSigns = document.querySelectorAll('.drop-sign');
 
 function answersDropDown(){
     //Creates div that contains answer
@@ -9,6 +10,9 @@ function answersDropDown(){
         question.addEventListener('click', () => {
             question.appendChild(answers);
             answers.classList.add('answers');
+
+            //Triggers change of drop sign
+            turnDropSign();
             
             //Display the answers in the answer div from the faqAnswers object
             for(const key in faqAnswers){
@@ -21,6 +25,13 @@ function answersDropDown(){
         })
     })
 }
+
+//Changes positioning to indicate that the answer have dropped
+function turnDropSign(){
+    dropSigns.forEach(dropSign => {
+        dropSign.classList.toggle('changed');
+    });
+};
 
 answersDropDown();
 
