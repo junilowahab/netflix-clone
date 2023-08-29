@@ -218,15 +218,29 @@ video{
 }
 
 .questions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 80px;
     width: 80vw;
-    background-color: rgb(54, 54, 54);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(54, 54, 54, 0.5);
     padding: 20px;
     overflow-y: hidden;
     margin-top: 10px;
+    transition: .2s;
+}
+
+.questions div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 80vw;
+}
+
+.questions:hover{
+    background-color: rgb(54, 54, 54, 1);
 }
 
 span{
@@ -234,7 +248,7 @@ span{
 }
 
 .answers{
-    margin-top: 5px;
+    margin-top: 1px;
     height: 0px;
     width: 80vw;
     background-color: rgb(54, 54, 54);
