@@ -238,6 +238,10 @@ video{
     overflow-y: hidden;
 }
 
+.quest.selected{
+    background-color: rgb(54, 54, 54, 1);
+}
+
 .quest:hover{
     background-color: rgb(54, 54, 54, 1);
 }

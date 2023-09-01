@@ -1,5 +1,7 @@
 let questions = document.querySelectorAll('.questions');
 let dropSigns = document.querySelectorAll('.drop-sign');
+let questionBackgrounds = document.querySelectorAll('.quest');
+let answerWindowOpened = true;
 
 function answersDropDown(){
     //Creates div that contains answer
@@ -9,7 +11,7 @@ function answersDropDown(){
     questions.forEach(question => {
         question.addEventListener('click', () => {
             question.appendChild(answers);
-            answers.classList.add('answers');
+            answers.classList.toggle('answers');
             dropSigns.forEach(dropSign => {
                 
                 //Triggers change of drop sign
@@ -17,8 +19,10 @@ function answersDropDown(){
             
                 //Adds a class to indicate that the answer have dropped
                 function turnDropSign(){
-                    if(question.contains(dropSign)){
-                        dropSign.classList.toggle('changed')
+                    if(question.contains(dropSign) && answerWindowOpened === true){
+                        dropSign.classList.add('changed');
+                    }else{
+                        dropSign.classList.remove('changed');
                     }   
                 };
             })
@@ -27,9 +31,22 @@ function answersDropDown(){
             for(const key in faqAnswers){
                 let questionID = question.getAttribute('id');
                 if(key === questionID){
-                    answers.innerText = faqAnswers[key];
+                    if(answerWindowOpened === true){
+                        answers.innerText = faqAnswers[key];
+                        answerWindowOpened = false;
+                    }else if(answerWindowOpened === false){
+                        answers.innerText = '';
+                        answerWindowOpened = true;
+                    }
                 }
             }
+
+            //Backround highlights when selected
+            questionBackgrounds.forEach(questionBackground => {
+                if(question.contains(questionBackground)){
+                    questionBackground.classList.toggle('selected');
+                }
+            })
         })
     })
 }
