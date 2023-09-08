@@ -248,6 +248,7 @@ video{
 
 .drop-sign{
     font-size: 50px;
+    transition: .1s;
 }
 
 .drop-sign.changed{
