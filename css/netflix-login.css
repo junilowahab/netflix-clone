@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.login-page{
+    background-image: url(../images/netflixteaser.png);
+    height: 150vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.netflix-banner{
+    width: 100vw;
+    height: 100px;
+    background-image: linear-gradient(black, transparent);
+}
+
+.netflix-image{
+    height: 90px;
+    width: 200px;
+    margin-left: 20px;
+}
