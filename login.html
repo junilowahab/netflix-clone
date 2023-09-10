@@ -12,10 +12,12 @@
         <div class="netflix-banner">
             <a href="index.html"><img src="./images/Netflix-Logo.wine.svg" alt="netflix-logo1" class="netflix-image"></a>
         </div>
-        <form action="">
+        <form action="/" id="form">
             <h1>Sign In</h1>
             <input type="email" name="email" id="login-email" placeholder="Email" required>
-            <input type="password" placeholder="Password" id="password" required>
+            <span class="email-error"></span>
+            <input type="password" placeholder="Password" id="password" minlength="5" maxlength="15">
+            <span class="password-error"></span>
             <button type="submit">Sign In</button>
             <div>
                 <input type="radio" name="remember-me" id="remember-me">
@@ -24,5 +26,6 @@
             </div>
         </form>
     </section>
+    <script src="/./javascript/netflix-login.js"></script>
 </body>
 </html>
