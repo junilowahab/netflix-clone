@@ -87,6 +87,7 @@ form div a{
 }
 
 .email-error, .password-error{
+    margin-top: 5px;
     width: 330px;
     background-color: transparent;
     font-size: 13px;
