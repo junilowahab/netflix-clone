@@ -86,12 +86,13 @@ form div a{
     text-decoration: none;
 }
 
-.email-error{
+.email-error, .password-error{
     width: 330px;
     background-color: rgba(255, 0, 0, 0.445);
     border-radius: 0 0 2px 2px;
+    font-size: 13px;
 }
 
 .active{
-    padding: 10px;
+    padding: 8px;
 }
