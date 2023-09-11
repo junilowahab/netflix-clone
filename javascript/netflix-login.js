@@ -7,13 +7,13 @@ const passwordError = document.querySelector('.password-error')
 form.addEventListener('input', () => {
         if(email.validity.valid){
             emailError.innerText = '';
-            emailError.classList.remove('active');
+            email.classList.remove('active');
         }else{
             showError();
         }
         if(emailPassword.validity.valid){
             passwordError.innerText = '';
-            passwordError.classList.remove('active');
+            emailPassword.classList.remove('active');
         }else{
             showError();
         }
@@ -33,20 +33,20 @@ form.addEventListener('submit', (e) => {
 function showError(){
     //Error for email
     if(email.validity.valueMissing){
-        emailError.innerText = 'You need to enter an email address!'
-        emailError.classList.add('active');
+        emailError.innerText = 'Please enter a valid email address or phone number.'
+        email.classList.add('active');
     }else if(email.validity.typeMismatch){
-        emailError.innerText = 'This is not an email address.'
-        emailError.classList.add('active');
+        emailError.innerText = 'Please enter a valid email address.'
+        email.classList.add('active');
     }
 
     //Error for password
     if(emailPassword.validity.tooShort){
-        passwordError.innerText = 'Your password does not have enough characters';
-        passwordError.classList.add('active');
+        passwordError.innerText = 'Your password must contain characters between 5 to 15 characters';
+        emailPassword.classList.add('active');
         console.log(emailPassword.value.length)
     }else if(emailPassword.validity.tooLong){
         passwordError.innerText = 'Your password has too many characters';
-        passwordError.classList.add('active');
+        emailPassword.classList.add('active');
     }
 }
