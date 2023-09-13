@@ -20,13 +20,11 @@ form.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (e) => {
-    if(!email.validity.valid){
+    if(!email.validity.valid || !emailPassword.validity.valid){
         showError();
         e.preventDefault();
-    }
-    if(!emailPassword.validity.valid){
-        showError();
-        e.preventDefault();
+    }else{
+        window.open('http://127.0.0.1:5500/main.html')
     }
 });
 
