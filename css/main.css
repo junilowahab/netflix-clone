@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.movie-background{
+    background-image: url(../images/stcoverposter.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 90vh;
+    width: 100vw;    
+}
+
+.movie-background nav{
+    color: white;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-background img{
+    margin-left: 40px;
+    height: 80px;
+    width: 120px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 450px;
+    margin-left: 15px;
+
+    font-size: .7rem;
+}
+
+.profile{
+    background-image: url(../images/netflixprofile.png);
+    background-position: center;
+    background-size: cover;
+
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: 50px;
+}
