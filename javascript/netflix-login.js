@@ -4,6 +4,7 @@ const form = document.querySelector('#form');
 const emailError = document.querySelector('.email-error');
 const passwordError = document.querySelector('.password-error')
 
+form.noValidate = true;
 form.addEventListener('input', () => {
         if(email.validity.valid){
             emailError.innerText = '';
