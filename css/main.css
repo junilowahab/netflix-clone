@@ -133,7 +133,7 @@
     display: grid;
     grid-auto-flow: column;
     overflow-x: scroll;
-    gap: 15px;
+    gap: 20px;
 
     height: fit-content;
 }
@@ -143,11 +143,11 @@
 }
 
 .movie-thumbnail{
-    height: 200px;
-    width: 350px;
+    height: 150px;
+    width: 250px;
     background-position: center;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 #umbrella-academy{
@@ -210,6 +210,10 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background: grey;
+    background: rgba(128, 128, 128, 0.582);
     border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
 }
