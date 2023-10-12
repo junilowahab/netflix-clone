@@ -126,20 +126,19 @@
 .movie-lists h1{
     color: white;
     width: fit-content;
-    /* margin-bottom: 20px; */
+    margin-bottom: -20px;
 }
 
 .movie-list{
     display: grid;
     grid-auto-flow: column;
-    overflow-x: scroll;
     gap: 20px;
+    align-items: center;
 
-    height: fit-content;
-}
+    overflow-x: scroll;
+    overflow-y: hidden;
 
-.movie-lists::-webkit-scrollbar{
-    width: 5px;
+    height: 300px;
 }
 
 .movie-thumbnail{
@@ -148,6 +147,12 @@
     background-position: center;
     background-size: cover;
     border-radius: 3px;
+    transition: .3s;
+}
+
+.movie-thumbnail:hover{
+    height: 225px;
+    width: 375px;
 }
 
 #umbrella-academy{
@@ -214,6 +219,10 @@
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:horizontal{
+    background: none;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover{
     background: gray;
 }
