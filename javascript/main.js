@@ -8,15 +8,18 @@ thumbnails.forEach(thumbnail => {
     //Add movie details on hover
     thumbnail.addEventListener('mouseover', () => {
         let thumbnailID = thumbnail.getAttribute('id');
-        function findMovieDetails(x){
-            thumbnailTitle.innerText = netflix['series'][thumbnailID]['title'];
-        };
         findMovieDetails(thumbnailID);
-        thumbnail.appendChild(thumbnailTitle);
+        thumbnail.append(thumbnailTitle, thumbnailDescription);
     });
 
-    //Remover movie details when moude leaves
+    //Remover movie details when mouse leaves
     thumbnail.addEventListener('mouseleave', () => {
-        thumbnail.removeChild(thumbnailTitle)
+        thumbnail.removeChild(thumbnailTitle);
+        thumbnail.removeChild(thumbnailDescription);
     })
-})
+});
+
+function findMovieDetails(id){
+    thumbnailTitle.innerText = netflix['series'][id]['title'];
+    thumbnailDescription.innerText = netflix['series'][id]['description'];
+};

@@ -148,6 +148,17 @@
     background-size: cover;
     border-radius: 3px;
     transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+
+    color: white;
+}
+
+.movie-thumbnails h1{
+    margin-bottom: 10px;
 }
 
 .movie-thumbnails:hover{
