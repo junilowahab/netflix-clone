@@ -141,7 +141,7 @@
     height: 300px;
 }
 
-.movie-thumbnail{
+.movie-thumbnails{
     height: 150px;
     width: 250px;
     background-position: center;
@@ -150,7 +150,7 @@
     transition: .3s;
 }
 
-.movie-thumbnail:hover{
+.movie-thumbnails:hover{
     height: 225px;
     width: 375px;
 }

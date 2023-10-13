@@ -1,0 +1,27 @@
+{
+    "series":{
+        "umbrella-academy":{
+            "title": "Umbrella Academy",
+            "numberOfSeasons": "3 seasons",
+            "releaseDate": "2019",
+            "genre": "Action, Fiction",
+            "description": "A dysfunctional family of adopted sibling superheroes reunite to solve the mystery of their father's death and the threat of an imminent apocalypse."
+        },
+        "top-boy":{
+            "title": "Top Boy",
+            "numberOfSeasons": "5 seasons",
+            "releaseDate": "2011",
+            "genre": "Crime drama",
+            "description": "Two seasoned drug dealers return to the gritty streets of London, but their pursuit of money and power is threatened by a young and ruthless hustler."
+        }
+    },
+    "movies":{
+        "entergalactic":{
+            "title": "Entergalactic",
+            "length": "90 minutes",
+            "releaseDate": "2022",
+            "genre": "Romance, Adult animation",
+            "description": "Ambitious artist Jabari attempts to balance success and love when he moves into his dream Manhattan apartment and falls for his next-door neighbor."
+        }
+    }
+}
