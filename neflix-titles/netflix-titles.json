@@ -5,7 +5,9 @@
             "numberOfSeasons": "3 seasons",
             "releaseDate": "2019",
             "genre": "Action, Fiction",
-            "description": "A dysfunctional family of adopted sibling superheroes reunite to solve the mystery of their father's death and the threat of an imminent apocalypse."
+            "description": "A dysfunctional family of adopted sibling superheroes reunite to solve the mystery of their father's death and the threat of an imminent apocalypse.",
+            "hoverImage": "umrellaacademyhover.jpg",
+            "originalImage": "umbrellaacademy.jpeg"
         },
         "top-boy":{
             "title": "Top Boy",
